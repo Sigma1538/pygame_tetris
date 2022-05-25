@@ -111,17 +111,17 @@ class Box:
                           NEXT_D,NEXT_D)
 
         #BGM
-        self.bgm = None
+        self.bgm = None #BGMファイルのディレクトリをリストに入れる　ex)["hoge.wav","huga.wav"]
         pygame.mixer.music.set_volume(0.3)
         
         #sound
         
-        self.put_sound = pygame.mixer.Sound("poka01.wav")
-        self.delete_sound = pygame.mixer.Sound("jump09.wav")
-        self.start_sound = pygame.mixer.Sound("coin01.wav")
-        self.s_up_sound = pygame.mixer.Sound("coin05.wav")
-        self.move_sound = pygame.mixer.Sound("select03.wav")
-        self.over_sound = pygame.mixer.Sound("game_over.wav")
+        self.put_sound = pygame.mixer.Sound("poka01.wav") #テトリミノが落ち切った時の効果音
+        self.delete_sound = pygame.mixer.Sound("jump09.wav") #ラインが消えるときの効果音
+        self.start_sound = pygame.mixer.Sound("coin01.wav") #ゲームが始まる時の効果音
+        self.s_up_sound = pygame.mixer.Sound("coin05.wav") #speed upする時の効果音
+        self.move_sound = pygame.mixer.Sound("select03.wav") #左右ボタンを押したときの効果音
+        self.over_sound = pygame.mixer.Sound("game_over.wav") #ゲームオーバーした時の効果音
         
         
     def setup(self): #ゲームごとにリセットする項目の初期化        
